@@ -27,7 +27,9 @@ public class Adapter extends DrawPanelController implements Job2dDriver {
 		line.setStartCoordinates(this.startX, this.startY);
 		line.setEndCoordinates(x, y);
 
+		setPosition(x, y);
 		drawLine(line);
+
 	}
 
 	@Override
