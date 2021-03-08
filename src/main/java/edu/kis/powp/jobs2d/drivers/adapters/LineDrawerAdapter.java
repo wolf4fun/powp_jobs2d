@@ -1,4 +1,4 @@
-package edu.kis.powp.jobs2d.drivers.adapter;
+package edu.kis.powp.jobs2d.drivers.adapters;
 
 import edu.kis.legacy.drawer.shape.ILine;
 import edu.kis.legacy.drawer.shape.LineFactory;
@@ -34,6 +34,6 @@ public class LineDrawerAdapter extends Adapter {
 
 	@Override
 	public String toString() {
-		return "Extended Adapter";
+		return "Extended Adapter for drawing lines";
 	}
 }
