@@ -3,7 +3,7 @@ package edu.kis.powp.jobs2d.drivers.adapters;
 import edu.kis.legacy.drawer.shape.ILine;
 import edu.kis.legacy.drawer.shape.LineFactory;
 
-public class LineDrawerAdapter extends Adapter {
+public class LineDrawerAdapter extends Job2dAdapter {
 
   private LineType lineType = LineType.DOTTED;
 
@@ -34,6 +34,6 @@ public class LineDrawerAdapter extends Adapter {
 
 	@Override
 	public String toString() {
-		return "Extended Adapter for drawing lines";
+		return "Extended Job2dAdapter for drawing lines";
 	}
 }
