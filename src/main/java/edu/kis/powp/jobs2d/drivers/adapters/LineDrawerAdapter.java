@@ -37,7 +37,7 @@ public class LineDrawerAdapter extends Job2dAdapter {
 		ILine line = getLine();
 		line.setStartCoordinates(super.getStartX(), super.getStartY());
 		line.setEndCoordinates(x, y);
-		getPanelControler().drawLine(line);
+		getDrawPanelController().drawLine(line);
 		setPosition(x, y);
 		drawLine(line);
 	}
