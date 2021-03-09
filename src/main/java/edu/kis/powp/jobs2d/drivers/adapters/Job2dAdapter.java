@@ -38,7 +38,7 @@ public class Job2dAdapter extends DrawPanelController implements Job2dDriver{
 	@Override
 	public void operateTo(int x, int y) {
 		ILine line = LineFactory.getBasicLine();
-		line.setStartCoordinates(this.startX, this.startY);
+		line.setStartCoordinates(getStartX(), getStartY());
 		line.setEndCoordinates(x, y);
 		drawerController.drawLine(line);
 		setPosition(x, y);
