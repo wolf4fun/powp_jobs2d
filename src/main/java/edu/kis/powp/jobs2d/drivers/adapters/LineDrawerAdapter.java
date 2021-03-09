@@ -11,7 +11,7 @@ public class LineDrawerAdapter extends Job2dAdapter {
 		super();
 	}
 
-  enum LineType {
+  public enum LineType {
     BASIC, DOTTED, SPECIAL
   }
 
@@ -31,6 +31,16 @@ public class LineDrawerAdapter extends Job2dAdapter {
         return LineFactory.getBasicLine();
     }
   }
+
+  @Override
+	public void operateTo(int x, int y) {
+		ILine line = getLine();
+		line.setStartCoordinates(super.getStartX(), super.getStartY());
+		line.setEndCoordinates(x, y);
+		getPanelControler().drawLine(line);
+		setPosition(x, y);
+		drawLine(line);
+	}
 
 	@Override
 	public String toString() {
